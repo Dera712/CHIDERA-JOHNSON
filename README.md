@@ -1,6 +1,6 @@
 # Intelligent AI-Based Recruitment Decision Support System
 
-This repository contains the design and implementation of the **Baseline** and **Enhanced** recruitment systems developed for my MSc dissertation at Coventry University.
+This repository contains the design and implementation of the **Baseline** and **Enhanced** recruitment systems for my MSc dissertation at Coventry University.
 
 The project investigates the use of **Artificial Intelligence (AI)**, **Natural Language Processing (NLP)**, **semantic similarity**, and **Machine Learning** to improve resume screening and candidate-job matching while supporting responsible AI principles.
 
