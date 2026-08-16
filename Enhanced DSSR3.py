@@ -31,18 +31,11 @@ from wordcloud import WordCloud, STOPWORDS
 # =============================================================================
 
 """
-Stage 1: Data Acquisition
-
 This stage loads the Software Developer job description and all candidate
 CVs from Microsoft Word (.docx) documents.
 
 The job description serves as the reference document, while the CVs form
-the candidate dataset used throughout the recruitment pipeline.
-
-Outputs:
-    - job_description (string)
-    - cvs_database (dictionary)
-"""
+the candidate dataset used throughout the recruitment pipeline. """
 
 # =============================================================================
 # FILE PATHS
@@ -140,8 +133,6 @@ print(job_description[:1000])
 # =============================================================================
 
 """
-Stage 2: NLP Initialisation
-
 This stage prepares the Natural Language Processing (NLP) environment
 used throughout the enhanced recruitment system.
 
@@ -272,8 +263,6 @@ for skill in TECHNICAL_SKILLS[:10]:
 # =============================================================================
 
 """
-Stage 3: Bias Mitigation
-
 This stage anonymises sensitive information from candidate CVs before
 feature extraction.
 
@@ -374,8 +363,6 @@ print(processed_cvs[0][:600])
 # =============================================================================
 
 """
-Stage 4: Feature Engineering
-
 This stage extracts job-specific technical features from every anonymised CV.
 
 The extracted features are grouped into:
@@ -608,19 +595,11 @@ print(features_df.columns.tolist())
 # =============================================================================
 
 """
-Stage 5: Similarity Scoring
-
 This stage compares every anonymised CV with the Software Developer
 Job Description using TF-IDF and Cosine Similarity.
 
 The semantic similarity score is then combined with the technical
 feature scores to calculate the Candidate Suitability Score (CSS).
-
-Outputs
--------
-Similarity Score
-Candidate Suitability Score
-Candidate Ranking
 """
 
 # =============================================================================
@@ -783,8 +762,6 @@ features_df.to_excel(
 # =============================================================================
 
 """
-Stage 6
-
 This stage validates the enhanced recruitment framework using a
 Random Forest classifier.
 
@@ -1031,8 +1008,6 @@ features_df.to_excel(
 # =============================================================================
 
 """
-Stage 7
-
 This stage generates the final recruitment decision support dashboard.
 
 The dashboard combines:
@@ -1044,8 +1019,6 @@ The dashboard combines:
 • Ground Truth
 • Random Forest Prediction
 • Recruiter Recommendation
-
-This serves as the final output of the enhanced recruitment framework.
 """
 
 # =============================================================================
